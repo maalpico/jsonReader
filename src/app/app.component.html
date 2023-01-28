@@ -1,0 +1,14 @@
+<div class="wrapper">
+<div class="gallery">
+  <div class="item" *ngFor="let item of data" >
+    <h1> {{ item.name}} </h1>
+    <p *ngFor="let role of item.roles">
+        {{ role }}
+    </p>
+    <div class="imgs">
+      <a [href]="item.link"><img [src]="item.image" alt=""></a>
+    </div>
+  </div>
+</div>
+
+</div>
